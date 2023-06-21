@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Demo</title>
+	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+	<title></title>
 </head>
+<link rel="stylesheet" href="styles.css">
 <body>
-Hello
+<div id="sniper-crosshair-box">
+	<img id="sniper-crosshair" src="gui/sniper-crosshair1.png">
+</div>
+<div id="game-controls">
+	<img class="centerV" id="crosshair" src="gui/crosshair.png" />
+</div>
+<div id="menuMain">
+	<div id="gameStart" class="smoothbutton">
+		Start 
+	</div>
+</div>
+<div id="stats">
+	<div class="close">x</div>
+	<div class="stat" id="fps">0</div>
+	<div class="stat" id="Vertices">0</div>
+	<div class="stat" id="Faces">0</div>
+	<div class="stat" id="Objects">0</div>
+	<div class="game-controls-ref">
+		<div class="k-control">
+			<div><span class="stat-data">W:</span> Move forwards</div>
+			<div><span class="stat-data">Space:</span> Jump</div>
+			<div><span class="stat-data">Left mouse:</span> Shoot</div>
+			<div><span class="stat-data">Hold left mouse:</span> Throws grenade in hand</div>
+			<div><span class="stat-data">Right mouse:</span> Sniper crosshair</div>
+			<div><span class="stat-data">Hold right mouse:</span> Normal crosshair</div>
+			<div><span class="stat-data">Mouse wheel:</span> Sniper crosshair zoom</div>
+			<div><span class="stat-data">F:</span> Picks an item or interacts with NPC</div>
+		</div>
+	</div>
+</div>
+
 </body>
+ <script type="text/javascript" src="babylon/ammo.js"></script>
+<!-- <script type="text/javascript" src="babylon/cannonUtils.js"></script> -->
+<script src="babylon/babylon.js"></script>
+<script src="babylon/babylonjs.materials.min.js"></script>
+<script src="babylon/babylonjs.loaders.min.js"></script>
+<script src="babylon/babylonjs.postProcess.min.js"></script>
+<script src="babylon/babylonjs.proceduralTextures.min.js"></script>
+<script src="babylon/babylonjs.serializers.min.js"></script>
+
+<script type="text/javascript" src="babylon/babylon.gui.min.js"></script>
+<script defer src="js/shooterBundle.js"></script>
 </html>
