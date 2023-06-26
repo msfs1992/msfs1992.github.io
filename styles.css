@@ -44,9 +44,12 @@ body, html{
       height: 16px;
       object-fit: cover;
       margin: 0 auto;
-      display: block;
       display: none;
-      z-index: 999;
+      position: absolute;
+      z-index: 99999;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
     }
 #sniper-crosshair-box{
     display: none;

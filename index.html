@@ -3,20 +3,21 @@
 <head>
 	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
 	<title></title>
-</head>
+<script defer src="js/shooterBundle.js"></script></head>
 <link rel="stylesheet" href="styles.css">
 <body>
 <div id="sniper-crosshair-box">
 	<img id="sniper-crosshair" src="gui/sniper-crosshair1.png">
 </div>
-<div id="game-controls">
+<!-- <div id="game-controls">
 	<img class="centerV" id="crosshair" src="gui/crosshair.png" />
-</div>
-<div id="menuMain">
+</div> -->
+<img class="centerV" id="crosshair" src="gui/crosshair.png" />
+<!-- <div id="menuMain">
 	<div id="gameStart" class="smoothbutton">
 		Start 
 	</div>
-</div>
+</div> -->
 <div id="stats">
 	<div class="close">x</div>
 	<div class="stat" id="fps">0</div>
@@ -26,7 +27,7 @@
 	<div class="game-controls-ref">
 		<div class="k-control">
 			<div><span class="stat-data">W:</span> Move forwards</div>
-			<div><span class="stat-data">Space:</span> Jump</div>
+			<!-- <div><span class="stat-data">Space:</span> Jump</div> -->
 			<div><span class="stat-data">Left mouse:</span> Shoot</div>
 			<div><span class="stat-data">Hold left mouse:</span> Throws grenade in hand</div>
 			<div><span class="stat-data">Right mouse:</span> Sniper crosshair</div>
@@ -38,15 +39,17 @@
 </div>
 
 </body>
- <script type="text/javascript" src="babylon/ammo.js"></script>
-<!-- <script type="text/javascript" src="babylon/cannonUtils.js"></script> -->
-<script src="babylon/babylon.js"></script>
-<script src="babylon/babylonjs.materials.min.js"></script>
-<script src="babylon/babylonjs.loaders.min.js"></script>
-<script src="babylon/babylonjs.postProcess.min.js"></script>
-<script src="babylon/babylonjs.proceduralTextures.min.js"></script>
-<script src="babylon/babylonjs.serializers.min.js"></script>
+<!-- <script src="https://cdn.babylonjs.com/ammo.js"></script> -->
 
-<script type="text/javascript" src="babylon/babylon.gui.min.js"></script>
-<script defer src="js/shooterBundle.js"></script>
+<!-- <script type="text/javascript" src="babylon/cannonUtils.js"></script> -->
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+<script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+<script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+<script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+<script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+<script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+<script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
+<script src="https://cdn.babylonjs.com/havok/HavokPhysics_umd.js"></script>
 </html>
