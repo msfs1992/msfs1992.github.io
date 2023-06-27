@@ -1,0 +1,108 @@
+body, html{
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+}
+#menuMain{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 100;
+}
+.stat-data{
+  color:#56ff56;
+  font-size: 16px;
+  font-weight: 600;
+}
+#gameStart{
+    cursor: pointer;
+    border: 1px solid white;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.centerV{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+    #crosshair{
+      width: 16px;
+      height: 16px;
+      object-fit: cover;
+      margin: 0 auto;
+      display: none;
+      position: absolute;
+      z-index: 99999;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+#sniper-crosshair-box{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: 99;
+  }
+  #sniper-crosshair{
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  max-width: 1024px;
+  height: 100%;
+  }
+  #game-controls{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  .close{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    padding: 8px;
+    font-size: 17px;
+    line-height: 6px;
+    font-family: arial;
+    cursor: pointer;
+  }
+  #stats {
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: 2px solid red;
+    font-size: 14px;
+    color: white;
+    top: 15px;
+    right: 10px;
+    width: 255px;
+    background: rgba(0,0,0,0.65);
+    padding: 12px;
+    z-index: 9999;
+}
