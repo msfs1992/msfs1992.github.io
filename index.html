@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>3D Games and Metaverse</title>
-</head>
-<style type="text/css">
-	main{}
-	section{
-		padding: 16px;
-	}
-	h1{}
-	p{}
-	p > span{}
-	section a{
-		padding: 8px;
-	    background: green;
-	    color: white;
-	    border-radius: 8px;
-	}
-</style>
+	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+	<title></title>
+<script defer src="js/shooterBundle.js"></script></head>
+<link rel="stylesheet" href="styles.css">
 <body>
-	<main>
-		<section>
-			<h1>Demo Shooter</h1>
-			<p>In this demo you can pick up to 5 grenades from the table and throw it holding the left mouse button. You can shoot the barrel and walk over. <span>Under development</span></p>
-			<a target="_blank" href="https://msfs1992.github.io/games/shooter/havok">HAVOK</a>
-			<!-- <a href="msfs1992.github.io/games/shooter/ammo">AMMO</a> -->
-		</section>
-	</main>
+<div id="sniper-crosshair-box">
+	<img id="sniper-crosshair" src="gui/sniper-crosshair1.png">
+</div>
+<!-- <div id="game-controls">
+	<img class="centerV" id="crosshair" src="gui/crosshair.png" />
+</div> -->
+<img class="centerV" id="crosshair" src="gui/crosshair.png" />
+<!-- <div id="menuMain">
+	<div id="gameStart" class="smoothbutton">
+		Start 
+	</div>
+</div> -->
+<div id="stats">
+	<div class="close">x</div>
+	<div class="stat" id="fps">0</div>
+	<div class="stat" id="Vertices">0</div>
+	<div class="stat" id="Faces">0</div>
+	<div class="stat" id="Objects">0</div>
+	<div class="game-controls-ref">
+		<div class="k-control">
+			<div><span class="stat-data">W:</span> Move forwards</div>
+			<div><span class="stat-data">Space:</span> Jump</div>
+			<div><span class="stat-data">Left mouse:</span> Shoot</div>
+			<div><span class="stat-data">Hold left mouse:</span> Throws grenade in hand</div>
+			<div><span class="stat-data">Right mouse:</span> Sniper crosshair</div>
+			<div><span class="stat-data">Hold right mouse:</span> Normal crosshair</div>
+			<div><span class="stat-data">Mouse wheel:</span> Sniper crosshair zoom</div>
+			<div><span class="stat-data">F:</span> Picks an item</div>
+		</div>
+	</div>
+</div>
+
 </body>
+<script src="https://cdn.babylonjs.com/ammo.js"></script>
+
+<!-- <script type="text/javascript" src="babylon/cannonUtils.js"></script> -->
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+<script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+<script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+<script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+<script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+<script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+<script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
+<!-- <script src="https://cdn.babylonjs.com/havok/HavokPhysics_umd.js"></script> -->
 </html>
